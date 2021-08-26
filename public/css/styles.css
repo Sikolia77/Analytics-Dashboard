@@ -1,0 +1,199 @@
+body{
+    overflow: hidden;
+}
+.header{
+    display: grid;
+    height: 8vh;
+    grid-template-columns: 1fr 3fr;
+}
+.topbar{
+    height: 8vh;
+    background-color:#192642;
+    z-index: 60;  
+    box-shadow: 0px 0px 0px 0px #192642;
+    text-align: left;
+    color: white;
+}
+.dat{
+    color:#00CBBD;
+}
+.p{
+    font-family:'Calibri';
+}
+.sidebar{
+    height: 8vh;
+    background-color: #192642;
+    color: #00CBBD;
+}
+.options{
+    text-align: left;
+    color: #00CBBD;
+}
+select{
+    border: 0;
+    outline: 0;
+    box-shadow: 0;
+    background: 0;
+    color: #00CBBD;
+}
+.profile{
+    text-align: right;
+    color:white;
+    height: 6vh;
+    margin: auto;
+}
+.profile select{
+    color: white;
+    margin: auto;
+}
+.profile img{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    /* margin: auto; */
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.sidecontent{
+    height:92vh;
+    background-color: #192642;
+    color: white;
+}
+.filters{
+    display: grid;
+    grid-template-columns: 1fr 0.2fr auto;
+}
+.filters button{
+    background-color: #00CBBD;
+    width: 70px;
+    height: 25px;
+    border-radius: 7px;
+    border: 0em;
+    margin-top: 20%;
+    padding-right: 10%;
+}
+.category{
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr;
+}
+.text{
+    color: #00CBBD;
+}
+.chart_container{
+   display: grid;
+   grid-template-columns: auto 1fr;
+   margin: auto;
+}
+
+/* .chart_container * {
+    border: 1px solid red;
+} */
+
+.desc{
+    transform: rotate(-90deg);
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+.piechart1{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin:auto;
+    background-image: conic-gradient(
+        hsl(221, 85%, 50%) 70deg, 
+        #00CBBD 0 235deg);
+}
+.piechart2{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin:auto;
+    background-image: conic-gradient(
+        hsl(221, 85%, 50%) 70deg, 
+        #00CBBD 0 235deg);
+}
+.maincontent{
+    height:92vh;
+}
+.midhead{
+    height: 5vh;
+    background: white;
+    color: black;
+}
+.map{
+    height:87vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    overflow-y: hidden;
+}
+.maparea{
+    height:87vh ;
+    background-color:wheat;
+    width: auto;
+    height: auto;
+}
+
+.chartarea{
+    height:87vh ;
+    background-color:whitesmoke;
+}
+.chart_container2{
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    padding-bottom: 10%;
+    padding: 10%;
+}
+.variety{
+    transform: rotate(90deg);
+    color: orange;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-right: 0%;
+    padding-right:0;
+}
+.piechart3{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin:auto;
+    background-image: conic-gradient(
+        blue 70deg, 
+        #FF9306 0 235deg);
+    margin-left: 30%;
+}
+.piechart4{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin:auto;
+    background-image: conic-gradient(
+        blue 70deg, 
+        #FF9306 0 235deg);
+    margin-left: 30%
+}
+.piechart5{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin:auto;
+    background-image: conic-gradient(
+        blue 70deg, 
+        #FF9306 0 235deg);
+    margin-left: 30%
+}
+.chartarea span{
+    color: limegreen;
+    text-align: right;
+}
+.copyright{
+    text-align: center;
+}
+.copyright span{
+    color:#00CBBD;
+}

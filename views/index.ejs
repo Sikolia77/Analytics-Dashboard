@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Analytics Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+ integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+ crossorigin=""></script>
+</head>
+<body>
+    <div class="header">
+        <div class="topbar">
+            <div class="dat"><strong>DAT</strong></div>
+            <p>One Million Farmer Platform</p>
+        </div>
+        <div class="sidebar">
+            <div class="options">
+                <label for="category">Category</label>
+                <select id="category">Category</select>
+                <label for="analytics">Analytics</label>
+                <select id="analytics">Analytics</select>
+                <label for="data">Data</label>
+                <select>Data</select>
+                <label for="reports">Reports</label>
+                <select>Reports</select>
+            </div>
+            <div class="profile">
+                <img src="/images/ninja.jpg" alt="profile photo">
+                <select id="details" class="details">details</select>
+            </div>
+
+        </div>
+    </div>
+  
+    <div class="content">
+        <div class="sidecontent">
+            <div class="filters">
+                <p>Filters</p>
+                <p>0</p>
+                <button id="reset">Reset</button>
+            </div>
+            
+            <hr size="2" width="95%" color="darkgrey">
+
+            <p>SELECT CATEGORY</p>
+            <div class="category">
+                    <p class="text">crops</p>
+                    <input type="checkbox"></input>
+                    <p>Livestock</p> 
+            </div>
+            <p>FARMERS PROFILE</p>
+
+            <hr size="2" width="95%" color="darkgrey">
+            <div class="chart_container">
+                <p class="desc">Gender</p>
+                <div class="piechart1"></div>
+            </div>
+            
+            <hr size="2" width="95%" color="darkgrey"><br>
+            <div class="chart_container">
+                <p class="desc">Age Group</p>
+                <div class="piechart2"></div>
+            </div>
+            <hr size="2" width="95%" color="darkgrey">
+        </div>
+
+        <div class="maincontent">
+            <div class="midhead">
+                <div class="categories">
+                    <label for="wards">Wards</label>
+                    <select id="wards">Wards</select>
+                    <label for="groups">Common Interest Groups</label>
+                    <select id="groups">Common Interest Groups</select>
+                    <label for="window">Investments Window</label>
+                    <select id="window">Investments Window</select>
+                </div>
+            </div>
+            <div class="map">
+                <div class="maparea" id="map"></div>
+                <div class="chartarea">
+                    <div class="chart_container2">
+                        <div class="piechart3"></div>
+                        <p class="variety">Variety</p>
+                    </div>
+                    <hr size="2" width="95%" color="darkgrey">
+                    <div class="chart_container2">
+                        <div class="piechart4"></div>
+                        <p class="variety">Variety</p>
+                    </div>
+                    <hr size="2" width="95%" color="darkgrey">
+                    <div class="chart_container2">
+                        <div class="piechart5"></div>
+                        <p class="variety">Variety</p>
+                    </div>
+                    <hr size="2" width="95%" color="darkgrey">
+                    <div class="copyright">
+                        <p>Powered by <span>Oakar Services Ltd</span></p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <script>
+        var map = L.map('map').setView([51.505, -0.09], 13);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([51.5, -0.09]).addTo(map)
+    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+    .openPopup();
+    </script>
+</body>
+</html>
